@@ -11,7 +11,7 @@
         </a>
 
         <div id="inventory" class="collapse">
-            <ul>
+            <ul class="ml-auto" style="list-style-type: none">
                 <li>
                     <a class="nav-link" href="{{ route('admin.product.index') }}">Product</a>
                 </li>
@@ -30,7 +30,7 @@
         </a>
 
         <div id="users" class="collapse">
-            <ul>
+            <ul class="ml-auto" style="list-style-type: none">
                 <li>
                     <a class="nav-link" href="#">Permission</a>
                 </li>
