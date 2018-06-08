@@ -22,7 +22,6 @@
     <link href="{{ asset('css/simple-sidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('plugin/dataTables/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
 
-
     <!--Scripts-->
     <script src="{{ asset('js/jquery/jquery.slim.min.js') }}"></script>
     <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
@@ -41,6 +40,10 @@
                 {{ config('app.name', 'Laravel') }}
             </a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <!-- Right Side Of Navbar -->
@@ -57,8 +60,8 @@
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item ml-auto" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     <span class="fas fa-sign-out"></span> Logout
                                 </a>
 
