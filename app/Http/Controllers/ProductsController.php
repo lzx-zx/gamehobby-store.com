@@ -52,9 +52,10 @@ class ProductsController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($id, Product $product)
     {
-        //
+        $product = $product->findOrFail($id);
+        return view('admin.inventory.product.show', compact('product'));
     }
 
     /**
