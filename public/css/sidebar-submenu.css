@@ -1,0 +1,12 @@
+body {
+    padding: 0px !important;
+}
+
+.submenu li a {
+    padding: 0px 15px;
+}
+
+.breadcrumb {
+    padding: 0px;
+    background-color: transparent;
+}

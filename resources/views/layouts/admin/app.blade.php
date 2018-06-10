@@ -20,6 +20,7 @@
     <link href="{{ asset('css/fontawesome/fontawesome-all.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/simple-sidebar.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/sidebar-submenu.css') }}" rel="stylesheet">
     <link href="{{ asset('plugin/dataTables/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
 
     <!--Scripts-->
